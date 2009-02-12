@@ -1,0 +1,29 @@
+my $colors =
+	{
+	  default_fg => 'black'
+	, very_dark_green => [0, 50, 0]
+	} ;
+
+my $color_class =
+	{
+	  default             => ['default_bg',      'default_fg']
+	, selection           => [[r, g, b],       'white']
+	}
+	
+my $keyword_color_class =
+	{
+	DynaLoader                     => ['red', [r, g, b]],
+	DynaLoader                     => ['red', 'yellow'],
+	carp                           =>'Carp',
+	} ;
+
+# end result
+my $keyword_color_class =
+	{
+	DynaLoader                     => [[r, g, b], [r, g, b]],
+	DynaLoader                     => ['#rgb', '#rgb'],
+	DynaLoader                     => '#rgb#rgb', 
+	DynaLoader                     => "<span foreground='#rgb' background='#rgb'>", # "</span>"
+	}
+
+

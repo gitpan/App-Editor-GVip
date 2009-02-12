@@ -1,0 +1,72 @@
+#------------------#
+# This is Todo.txt #
+#------------------#
+
+General:
+
+#move  config out
+move color definitions hadling functions out
+
+port flex perl lexer and ad pod verbatim
+
+# split functionality in different files
+#move view config from global space
+#move action definition out
+
+actions should be classified to help look at them in a tree view ?
+	? what if same action is in multiple places
+		=> keep a single list thought it's classigfied
+		
+multiple actions for the same event?
+	=> context menu
+	=> post draw
+	=> lexer
+
+force single action
+
+#query action information
+	=> actions passed to actions
+
+lock action slot
+
+#filters
+	=> actions passed to actions
+
+#remove action, save actions copy/restore
+	=> actions passed to actions
+
+Editor:
+#show path to file
+add menu concatenation
+add editor menu config
+
+#make editor own the buffers
+#make something usefull with output area and make it vertical or horizontal
+
+top and bottom views
+
+View:
+move config out
+
+show edit state
+add popup view menu config => action
+
+#use simple perl lexer and show colors
+show element frame 
+scrollbar shall not scoll to far down
+
+selection
+	half font select
+	auto scroll
+
+generate "new selection" action
+
+hide caret
+
+
+#-----
+Ideas:
+#-----
+
+autobookmark at places often edited
+	=> edit event for actions
